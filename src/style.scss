@@ -1,0 +1,31 @@
+$font-color: black;
+$font-size: 1.2em;
+
+main {
+  font-family: "C059", "Alegreya", serif;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+main.blurry {
+  color: transparent;
+  text-shadow: 0 0 7px $font-color;
+
+  .cdx-checklist__item-checkbox {
+    opacity: 0;
+  }
+}
+
+h1, h2 {
+  font-size: $font-size;
+  font-weight: normal;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-style: italic;
+}

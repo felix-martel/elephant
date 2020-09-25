@@ -1,0 +1,32 @@
+{
+  "name": "elephant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server  --config ./webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Felix Martel",
+  "license": "MIT",
+  "dependencies": {
+    "@editorjs/checklist": "^1.1.0",
+    "@editorjs/delimiter": "^1.1.0",
+    "@editorjs/editorjs": "^2.18.0",
+    "@editorjs/header": "^2.5.0",
+    "@editorjs/list": "^1.5.0",
+    "@editorjs/marker": "^1.2.2",
+    "@editorjs/table": "^1.2.2",
+    "@editorjs/underline": "^1.0.0"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
