@@ -1,5 +1,11 @@
 $font-color: black;
-$font-size: 1.2em;
+$font-light: gray;
+$font-lightest: lightgray;
+$font-size: 16px;
+$a-color: $font-color;
+$a-hover-color: blue;
+$highlight: rgba(255, 239, 46, 0.55);
+$blur: 0 0 7px;
 
 main {
   font-family: "C059", "Alegreya", serif;
@@ -9,10 +15,37 @@ main {
 
 main.blurry {
   color: transparent;
-  text-shadow: 0 0 7px $font-color;
+  text-shadow: $blur $font-color;
 
   .cdx-checklist__item-checkbox {
     opacity: 0;
+  }
+
+  a, a:visited {
+    color: transparent;
+    text-shadow: $blur $a-color;
+    border-color: transparent;
+  }
+
+  a:hover {
+    color: transparent;
+    text-shadow: $blur $a-hover-color;
+    border-color: transparent;
+  }
+
+  a.external {
+    color: transparent;
+    text-shadow: $blur $font-light;
+  }
+
+  mark.cdx-marker {
+    color: transparent;
+    text-shadow: $blur $font-color;
+    box-shadow: $blur $highlight;
+  }
+
+  .cdx-underline {
+    border-color: transparent;
   }
 }
 
@@ -28,4 +61,32 @@ h1 {
 
 h2 {
   font-style: italic;
+}
+
+mark.cdx-marker {
+  background: $highlight;
+}
+
+a, a:visited {
+  color: $a-color;
+  text-decoration: none !important;
+  border-bottom: 1px solid $font-lightest;
+}
+
+a:hover {
+  color: $a-hover-color;
+  border-color: $a-hover-color;
+}
+
+a.external {
+  color: $font-light;
+  text-decoration: none;
+  border: none;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+
+.cdx-underline {
+    text-decoration: none;
+    border-bottom: 1px solid;
 }

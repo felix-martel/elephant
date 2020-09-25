@@ -1,0 +1,27 @@
+{
+  "name": "Elephant",
+  "version": "0.1",
+  "description": "Mémoires d'éléphant, un journal de bord pour le XXIème siècle",
+  "chrome_url_overrides": {
+    "newtab": "dist/index.html"
+  },
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["dist/background.bundle.js"],
+    "persistent": false
+  },
+  "commands": {
+    "add-to-elephant": {
+      "suggested_key": {
+        "default": "Ctrl+E"
+      },
+      "description": "Add page or selected content to Elephant"
+    }
+  },
+  "manifest_version": 2
+}
